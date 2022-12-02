@@ -171,7 +171,7 @@ async def onmessage(bot:TelegramClient,ev: NewMessage.Event,loop,ret=False):
 
     #if username not in config.ACCES_USERS:
     if username not in tl_admin_users:
-        await bot.send_message(ev.chat.id,'❌ ℕ𝕠 𝕥𝕚𝕖𝕟𝕖𝕤 #𝕒𝕔𝕔𝕖𝕤𝕠, 𝕔𝕠𝕟𝕥𝕒𝕔𝕥𝕒 𝕔𝕠𝕟 @Ken_Kaneki_ofc ❌')
+        await bot.send_message(ev.chat.id,'❌ ℕ𝕠 𝕥𝕚𝕖𝕟𝕖𝕤 #𝕒𝕔𝕔𝕖𝕤𝕠, 𝕔𝕠𝕟𝕥𝕒𝕔𝕥𝕒 𝕔𝕠𝕟 @David_7amayo ❌')
         return
 
     if not os.path.isdir(config.ROOT_PATH + username):
@@ -214,7 +214,7 @@ async def onmessage(bot:TelegramClient,ev: NewMessage.Event,loop,ret=False):
 
     if '/start' in text:
         reply = '————————》<a href="https://t.me/Ken_Kaneki_ofc">Tokyo</a>《—————————\n'
-        reply += '#𝔹𝕠𝕥 𝕡𝕖𝕣𝕥𝕖𝕟𝕖𝕔𝕚𝕖𝕟𝕥𝕖 𝕒 𝕝𝕒 𝕔𝕒𝕕𝕖𝕟𝕒 Tokyo\n\n'
+        reply += '#𝔹𝕠𝕥 𝕡𝕖𝕣𝕥𝕖𝕟𝕖𝕔𝕚𝕖𝕟𝕥𝕖 𝕒 𝕝𝕒 𝕔𝕒𝕕𝕖𝕟𝕒 MEGA\n\n'
         reply += '𝓔𝓷𝓿í𝓮𝓶𝓮 𝓮𝓷𝓵𝓪𝓬𝓮𝓼 𝓹𝓪𝓻𝓪 𝓼𝓮𝓻 #𝓓𝓮𝓼𝓬𝓪𝓻𝓰𝓪𝓭𝓸𝓼\n🔍 𝓜𝓪𝓷𝓭𝓮 /info 𝔂 𝓵𝓮𝓪 𝓭𝓮𝓽𝓪𝓵𝓵𝓪𝓭𝓪𝓶𝓮𝓷𝓽𝓮\n————————》<a href="https://t.me/Ken_Kaneki_ofc">Tokyo</a>《—————————\n'
         message = await bot.send_message(ev.chat.id,reply,parse_mode='html')
         pass
